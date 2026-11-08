@@ -9,7 +9,7 @@ Empanadas de carne jugosas de receta autóctona, palitos de queso crujientes (te
 [Explorar Menú & Precios](#productos)Cotizar Evento o Empresa
 
 - 100% Artesanal
-- Sin Congelados
+- Venta de productos congelados
 - Despacho Puntual
 
 Empanadas Argentinas y Palitos de Queso Artesanales
