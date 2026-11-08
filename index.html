@@ -69,7 +69,14 @@ label{display:grid;gap:6px;font-weight:700;font-size:14px}
 .top .w{display:flex;align-items:center;justify-content:space-between;height:76px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;background:#fff;border:2px solid var(--gd);transition:transform .5s cubic-bezier(.2,.9,.3,1.4)}.brand:hover img{transform:rotate(-12deg) scale(1.08)}
-.brand b{display:block;font:700 22px Fraunces,serif;color:var(--br)}.brand i{display:block;font-size:12px;font-weight:700;color:var(--gd);font-style:normal}
+
+.brand b {
+    display: block;
+    font: 700 22px Fraunces, serif;
+    color: var(--ink);
+}
+
+.brand i{display:block;font-size:12px;font-weight:700;color:var(--gd);font-style:normal}
 #inicio{min-height:100svh;display:flex;align-items:center;padding:110px 0 90px;overflow:hidden;background:radial-gradient(55% 50% at 80% 35%,#bf864135,transparent),linear-gradient(var(--bg2),var(--bg) 85%)}
 .hg{display:grid;gap:44px;align-items:center}
 @media(min-width:920px){.hg{grid-template-columns:1.05fr .95fr}}
@@ -177,6 +184,22 @@ footer .brand b{color:#F2DAAC}.cp{margin-top:44px;padding-top:22px;border-top:1p
 @media(max-width:640px){.dw{top:auto;max-height:88dvh;width:100%;border-radius:26px 26px 0 0;transform:translateY(105%)}.top .btn{padding:11px 14px;font-size:14px}.brand i{display:none}.fab{padding:12px 16px}}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s cubic-bezier(.2,.9,.3,1)}.rv.v{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*,::before,::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Mejor contraste de la marca al hacer scroll */
+.top.sc .brand b {
+    color: var(--ink) !important;
+}
+
+.top.sc .brand i {
+    color: var(--gd) !important;
+}
+
+.top.sc .brand,
+.top.sc .brand span,
+.top.sc .brand b {
+    background: transparent !important;
+}
+
 </style>
 </head>
 
@@ -417,11 +440,11 @@ footer .brand b{color:#F2DAAC}.cp{margin-top:44px;padding-top:22px;border-top:1p
     <div>
       <h4>Navegación</h4>
       <ul>
-        <li><a href="#inicio"><a>Inicio</a></a></li>
-        <li><a href="#nosotros"><a>Nuestra Historia &amp; Misión</a></a></li>
-        <li><a href="#productos"><a>Catálogo de Productos</a></a></li>
-        <li><a href="#servicios"><a>Servicios de Catering B2B</a></a></li>
-        <li><a href="#galeria"><a>Galería de Fotos</a></a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nuestra Historia &amp; Misión</a></li>
+        <li><a href="#productos">Catálogo de Productos</a></li>
+        <li><a href="#servicios">Servicios de Catering B2B</a></li>
+        <li><a href="#galeria">Galería de Fotos</a></li>
       </ul>
     </div>
     <div>
